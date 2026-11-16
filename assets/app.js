@@ -172,7 +172,10 @@
   async function fetchCSV(url, label) {
     if (!url) return [];
     let res;
-    try { res = await fetch(url, { cache: 'no-cache' }); } catch (e) { throw new Error(`Couldn't load ${label} (${url}). ${e.message}`); }
+    const notPublished = /docs\.google\.com/.test(url)
+      ? ' This usually means that tab isn’t published: in the sheet, File → Share → Publish to web → Published content and settings → choose “Entire document” (or tick this tab) → Republish.' : '';
+    try { res = await fetch(url, { cache: 'no-cache' }); } catch (e) { throw new Error(`Couldn't load ${label} (${url}). ${e.message}.${notPublished}`); }
+    if (!res.ok && notPublished) throw new Error(`Couldn't load ${label} (${url}) — HTTP ${res.status}.${notPublished}`);
     if (!res.ok) throw new Error(`Couldn't load ${label} (${url}) — HTTP ${res.status}.`);
     const text = await res.text();
     if (/^\s*</.test(text)) throw new Error(`${label}: the link returned a web page, not CSV. In Google Sheets use File → Share → Publish to web → (choose the tab) → CSV, and copy that link.`);
