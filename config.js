@@ -27,9 +27,10 @@ window.TRIP_CONFIG = {
   // 2) Where your lists live. These can be files in this repo (default)
   //    or "Publish to web → CSV" links from a Google Sheet (README → "Step 3").
   data: {
-    places: 'data/places.csv', // Places tab
-    areas: 'data/areas.csv',   // Areas tab
-    routes: 'data/routes.csv', // Routes tab (Getting around)
+    // Published tabs of the Google Sheet "Hong Kong & Shenzhen map (places)".
+    places: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSsDwe1uMh3hPqbGJR0-DNq_hOvXco0s9oQFmS4eTg-jbkAmf0282eYiMQ8au_ZEAmO4vyT85wKMxJ-/pub?gid=0&single=true&output=csv', // Places tab
+    areas: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSsDwe1uMh3hPqbGJR0-DNq_hOvXco0s9oQFmS4eTg-jbkAmf0282eYiMQ8au_ZEAmO4vyT85wKMxJ-/pub?gid=1&single=true&output=csv',  // Areas tab
+    routes: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSsDwe1uMh3hPqbGJR0-DNq_hOvXco0s9oQFmS4eTg-jbkAmf0282eYiMQ8au_ZEAmO4vyT85wKMxJ-/pub?gid=2&single=true&output=csv', // Routes tab (Getting around)
   },
 
   // Heading for your personal notes inside each place's pop-up.
