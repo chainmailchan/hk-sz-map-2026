@@ -66,7 +66,7 @@ window.TRIP_CONFIG = {
     'Bakery': '🥐', 'Egg tarts': '🥧', 'Dessert': '🍮', 'Milk pudding': '🍮', 'Shaved ice': '🍧', 'Kakigori': '🍧',
     'Ice cream': '🍦', 'Café': '☕', 'Coffee': '☕', 'Milk tea': '🧋', 'Bar': '🍸', 'Cocktails': '🍸',
     'Egg waffles': '🧇', 'Tong sui': '🍡', 'Sweet soup': '🍡', 'Beef brisket': '🍜', 'Fast food': '🍔',
-    'Mall': '🛍️', 'Market': '🧺', 'Electronics': '📱', 'Heritage': '🏛️',
+    'Mall': '🛍️', 'Market': '🧺', 'Electronics': '📱', 'Heritage': '🏛️', 'Toys': '🧸', 'Trading cards': '🃏',
     'Hotel': '🏨', 'Serviced apartment': '🏢',
     'Viewpoint': '🌄', 'Promenade': '🌃', 'Museum': '🏛️', 'Temple': '🛕', 'Park': '🌳', 'Beach': '🏖️',
     'Attraction': '🎠', 'Ferry': '⛴️', 'Tram': '🚋', 'Station': '🚉', 'Airport': '✈️',
